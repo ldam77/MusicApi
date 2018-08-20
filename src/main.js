@@ -54,6 +54,8 @@ $(document).ready(function() {
     let trackLists = [];
     $(".tracklist").text("");
 
+    let promise = sea
+
     $.get(`http://theaudiodb.com/api/v1/json/1/searchalbum.php?s=${artistName}`).then(function(response) {
       response.album.forEach(function(album) {
         albumId = album.idAlbum;
